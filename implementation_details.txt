@@ -12,7 +12,7 @@ Objective/task: Generating positive psychosis symptom keywords
 Text/linguistic unit: Embedding models on full texts	
 	
 ###Model development###
-Approach: Embedding models, Word2Vec, gensim implementation (Python)	
+Approach: Embedding models, Word2Vec, gensim implementation (https://pypi.org/project/gensim/)	
 Parameters: size=100, window=5, min_count=5, workers=10	
 Preprocessing: lowercase, tokenization (simple_preprocess gensim function)
 Technical Details and Environment: Windows 7 Professional, Python 3	
