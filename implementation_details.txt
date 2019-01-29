@@ -1,0 +1,28 @@
+Paper: Generating Positive Psychosis Symptom Keywords from Electronic Health Records	
+Authors: N. Viani, R. Patel, R. Stewart, S. Velupillai
+
+
+###Data###
+Source: South London and Maudsley hospital (CRIS) [1], MIMIC II [2], PubMed [3]	
+Content: CRIS_specific (attachments from Early Intervention Services), CRIS_general (attachments from Discharge Summaries), MIMIC II, pre-trained PubMed embeddings [3]
+Size: CRIS_specific (23,293,959 words), CRIS_general (23,616,824 words), MIMIC (187,403,945 words), PubMed (3,580,134,037 words)	
+
+###NLP approach/model###
+Objective/task: Generating positive psychosis symptom keywords	
+Text/linguistic unit: Embedding models on full texts	
+	
+###Model development###
+Approach: Embedding models, Word2Vec, gensim implementation (Python)	
+Parameters: size=100, window=5, min_count=5, workers=10	
+Preprocessing: lowercase, tokenization (simple_preprocess gensim function)
+Technical Details and Environment: Windows 7 Professional, Python 3	
+	
+###Manual evaluation###	
+Generated terms manually annotated as: relevant (RT), potentially relevant (PT), not relevant (NT)	
+IAA average accuracy: 52.4% (all terms), 83.6% (RT terms only)	
+
+
+References
+1. Perera, G., Broadbent, M., Callard, F., et al.: Cohort profile of the South London and Maudsley NHS Foundation Trust Biomedical Research Centre (SLaM BRC) Case Register: current status and recent enhancement of an Electronic Mental Health Record-derived data resource. BMJ Open 6(3) (2016)
+2. Saeed, M., Villarroel, M., Reisner, A.T., et al.: Multiparameter intelligent monitoring in intensive care ii (mimic-ii): a public-access intensive care unit database. Critical care medicine 39(5), 952 (2011)
+3. McDonald,  R.,  Brokos,  G.I.,  Androutsopoulos,  I.:  Deep  relevance  ranking  using enhanced document-query interactions. In: Proc. EMNLP 2018 (2018)
