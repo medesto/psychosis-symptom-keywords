@@ -9,11 +9,11 @@ Size: CRIS_specific (23,293,959 words), CRIS_general (23,616,824 words), MIMIC (
 
 ###NLP approach/model###
 Objective/task: Generating positive psychosis symptom keywords	
-Text/linguistic unit: Embedding models on full texts	
+Text/linguistic unit: Embedding models trained on full texts (for CRIS_specific, CRIS_general, and MIMIC II), Pre-trained embeddings (for PubMed)	
 	
 ###Model development###
-Approach: Embedding models, Word2Vec, gensim implementation (https://pypi.org/project/gensim/)	
-Parameters: size=100, window=5, min_count=5, workers=10	
+Approach: Embedding models, Word2Vec, CBOW algorithm, gensim implementation (https://pypi.org/project/gensim/)	
+Parameters: size=100, window=5, min_count=5, workers=10	(default values for other parameters)
 Preprocessing: lowercase, tokenization (simple_preprocess gensim function)
 Technical Details and Environment: Windows 7 Professional, Python 3	
 	
