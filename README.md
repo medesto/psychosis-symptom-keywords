@@ -9,3 +9,9 @@ Available files:
 * evaluation_results_bigram_models: all generated terms from bigram models (with manual classification)
 * implementation_details: implementation details for embedding models
 
+Manual classification of generated terms:
+1) RT: relevant term
+2) PT: potentially relevant term
+3) NT: not relevant
+
+RT*: terms classified as RT by at least one annotator
